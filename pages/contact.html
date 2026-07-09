@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact St. Mary &amp; St. Paul Church and send a message to the church." />
+  <title>Contact - St. Mary &amp; St. Paul Church</title>
+  <link rel="icon" type="image/png" href="../assets/church-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body data-title-en="Contact - St. Mary &amp; St. Paul Church" data-title-ar="اتصل بنا - كنيسة السيدة العذراء والقديس بولس الرسول" data-desc-en="Contact St. Mary &amp; St. Paul Church and send a message to the church." data-desc-ar="التواصل مع كنيسة السيدة العذراء والقديس بولس الرسول وإرسال رسالة إلى الكنيسة.">
+  
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <img src="../assets/church-logo.png" alt="Church logo" class="brand-logo" />
+      <div>
+        <div class="brand-name" data-en="St. Mary &amp; St. Paul Church" data-ar="كنيسة السيدة العذراء والقديس بولس الرسول">St. Mary &amp; St. Paul Church</div>
+        <div class="brand-sub" data-en="Orthodox Church" data-ar="كنيسة أرثوذكسية">Orthodox Church</div>
+      </div>
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html" data-en="Home" data-ar="الرئيسية">Home</a><a href="about.html" data-en="About" data-ar="عن الكنيسة">About</a><a href="clergy.html" data-en="Fathers" data-ar="الكهنة">Fathers</a><a href="services.html" data-en="Services &amp; Liturgies" data-ar="القداسات والخدمات">Services &amp; Liturgies</a><a href="events.html" data-en="Events" data-ar="الفعاليات">Events</a><a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a><a href="contact.html" class="active" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" type="button" onclick="toggleLanguage()" aria-label="Language switch">
+        <span>العربية</span>
+        <span class="sep">|</span>
+        <span>English</span>
+      </button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-mob" id="navMob">
+  <button class="lang-toggle" type="button" onclick="toggleLanguage()" aria-label="Language switch">
+    <span>العربية</span>
+    <span class="sep">|</span>
+    <span>English</span>
+  </button>
+  <a href="../index.html" data-en="Home" data-ar="الرئيسية">Home</a><a href="about.html" data-en="About" data-ar="عن الكنيسة">About</a><a href="clergy.html" data-en="Fathers" data-ar="الكهنة">Fathers</a><a href="services.html" data-en="Services &amp; Liturgies" data-ar="القداسات والخدمات">Services &amp; Liturgies</a><a href="events.html" data-en="Events" data-ar="الفعاليات">Events</a><a href="gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a><a href="contact.html" class="active" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+</div>
+
+  
+<div class="pg-banner">
+  <div class="container">
+    <h1 data-en="Contact" data-ar="اتصل بنا">Contact</h1>
+    <div class="breadcrumb"><span data-en="Home" data-ar="الرئيسية">Home</span> <span class="bc-gold">›</span> <span class="bc-gold" data-en="Contact" data-ar="اتصل بنا">Contact</span></div>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-wrap">
+      <div class="ci-list">
+        <h3 data-en="Get in Touch" data-ar="تواصل معنا">Get in Touch</h3>
+        <div class="ci-item">
+          <div class="ci-ico"><i class="fa-solid fa-phone"></i></div>
+          <div class="ci-text">
+            <h4 data-en="Phone" data-ar="الهاتف">Phone</h4>
+            <a href="tel:033803481">033803481</a>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ci-ico"><i class="fa-solid fa-envelope"></i></div>
+          <div class="ci-text">
+            <h4 data-en="Email" data-ar="البريد الإلكتروني">Email</h4>
+            <a href="mailto:info@stmary-stpaul.org">info@stmary-stpaul.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cform">
+        <h3 data-en="Send a Message" data-ar="أرسل رسالة">Send a Message</h3>
+        <form id="contact-form" onsubmit="submitForm(event)">
+          <div class="frow">
+            
+    <div class="fg">
+      <label for="fname" data-en="First Name *" data-ar="الاسم الأول *">First Name *</label>
+      <input type="text" id="fname" name="fname"
+             data-en-placeholder="John"
+             data-ar-placeholder="الاسم"
+             placeholder="John" required />
+    </div>
+    
+            
+    <div class="fg">
+      <label for="lname" data-en="Last Name *" data-ar="اسم العائلة *">Last Name *</label>
+      <input type="text" id="lname" name="lname"
+             data-en-placeholder="Smith"
+             data-ar-placeholder="اسم العائلة"
+             placeholder="Smith" required />
+    </div>
+    
+          </div>
+          <div class="frow">
+            
+    <div class="fg">
+      <label for="email" data-en="Email *" data-ar="البريد الإلكتروني *">Email *</label>
+      <input type="email" id="email" name="email"
+             data-en-placeholder="name@example.com"
+             data-ar-placeholder="name@example.com"
+             placeholder="name@example.com" required />
+    </div>
+    
+            
+    <div class="fg">
+      <label for="phone" data-en="Phone Number" data-ar="رقم الهاتف">Phone Number</label>
+      <input type="tel" id="phone" name="phone"
+             data-en-placeholder="+1 (555) 000-0000"
+             data-ar-placeholder="+20 000 000 0000"
+             placeholder="+1 (555) 000-0000" />
+    </div>
+    
+          </div>
+          <div class="fg">
+            <label for="subject" data-en="Request Type *" data-ar="نوع الطلب *">Request Type *</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected data-en="Select a topic…" data-ar="اختر موضوعًا…">Select a topic…</option>
+              <option data-en="General Inquiry" data-ar="استفسار عام">General Inquiry</option>
+              <option data-en="Prayer Request" data-ar="طلب صلاة">Prayer Request</option>
+              <option data-en="Service Inquiry" data-ar="استفسار عن خدمة">Service Inquiry</option>
+              <option data-en="Meeting Information" data-ar="استعلام عن الاجتماعات">Meeting Information</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="message" data-en="Message *" data-ar="الرسالة *">Message *</label>
+            <textarea id="message" name="message" data-en-placeholder="Write your message here…" data-ar-placeholder="اكتب رسالتك هنا…" placeholder="Write your message here…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-navy form-submit" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
+        </form>
+        <div class="form-ok" id="form-ok" data-en="Thank you. Your message has been received." data-ar="شكرًا لك. تم استلام رسالتك.">Thank you. Your message has been received.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<footer id="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-logo">
+          <img src="../assets/church-logo.png" alt="Church logo" class="foot-logo-img" />
+          <span data-en="St. Mary &amp; St. Paul Church" data-ar="كنيسة السيدة العذراء والقديس بولس الرسول">St. Mary &amp; St. Paul Church</span>
+        </div>
+        <p data-en="A parish family rooted in worship, service, discipleship, and the living Orthodox faith." data-ar="أسرة كنسية راسخة في العبادة والخدمة والتلمذة والإيمان الأرثوذكسي الحي.">A parish family rooted in worship, service, discipleship, and the living Orthodox faith.</p>
+      </div>
+
+      <div class="foot-col">
+        <h4 data-en="Contact" data-ar="التواصل">Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:033803481">033803481</a></li>
+          <li><i class="fa-solid fa-envelope"></i> info@stmary-stpaul.org</li>
+        </ul>
+      </div>
+
+      <div class="foot-col">
+        <h4 data-en="Liturgy Highlights" data-ar="مواعيد سريعة">Liturgy Highlights</h4>
+        <div class="sch-row"><span class="sday" data-en="Saturday" data-ar="السبت">Saturday</span><span class="stime">8:00 - 10:00 AM</span></div>
+        <div class="sch-row"><span class="sday" data-en="Sunday" data-ar="الأحد">Sunday</span><span class="stime">6:00 - 8:00 / 8:00 - 10:00 AM</span></div>
+        <div class="sch-row"><span class="sday" data-en="Wednesday & Thursday" data-ar="الأربعاء والخميس">Wednesday & Thursday</span><span class="stime">8:00 - 10:00 AM</span></div>
+        <div class="sch-row"><span class="sday" data-en="Friday" data-ar="الجمعة">Friday</span><span class="stime">7:30 - 9:30 / 9:30 - 11:30 AM</span></div>
+      </div>
+    </div>
+
+          <div class="foot-col foot-social-col">
+        <h4 data-en="Follow Us" data-ar="تابعنا">Follow Us</h4>
+        <div class="foot-social">
+          <a href="https://www.youtube.com/@St.Mary_St.Paul_HG" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#ff0000"></i></a>
+          <a href="https://www.facebook.com/St.MarySt.Paul.HG/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color:#1877f2"></i></a>
+        </div>
+      </div>
+
+    <div class="foot-bottom">
+      <span data-en="© 2026 St. Mary &amp; St. Paul Church. All rights reserved." data-ar="© 2026 كنيسة السيدة العذراء والقديس بولس الرسول. جميع الحقوق محفوظة.">© 2026 St. Mary &amp; St. Paul Church. All rights reserved.</span>
+      <span data-en="Arabic | English language support enabled across the website." data-ar="يدعم الموقع العربية والإنجليزية على جميع الصفحات.">Arabic | English language support enabled across the website.</span>
+    </div>
+  </div>
+</footer>
+
+  <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+  <script src="../js/main.js"></script>
+</body>
+</html>
